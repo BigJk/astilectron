@@ -12,9 +12,19 @@
     "AONOSORA (https://github.com/ZEROKISEKI)",
     "Spencer Brower (https://github.com/sbrow"
   ],
+  "scripts": {
+    "format-all": "prettier --write *.js ./**/*.js",
+    "format-check": "prettier --check *.js ./**/*.js"
+  },
   "bin": "main.js",
   "main": "index.js",
   "peerDependencies": {
     "electron": ">=1.8.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.1"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.9"
   }
 }
